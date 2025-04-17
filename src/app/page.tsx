@@ -9,17 +9,24 @@ export default function Home() {
           <BurgerMenu />
         </div>
 
-        <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start w-full h-full justify-center">
-          <h1 className="text-8xl font-extrabold uppercase text-white drop-shadow-md tracking-wider mb-6">Bienvenue</h1>
-          <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-            <p className="mb-2 tracking-[-.01em]">
-              Voici mon portfolio où vous pourrez retrouver une petite introduction et quelques projets à moi.
-            </p>
-            <Link className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]" href={"/topics"}>Continuer</Link>
-          </ol>
-        </main>
+          <main className="flex flex-col gap-[32px] row-start-2 items-center sm:center w-full h-full justify-center">
+              <h1 className="text-8xl font-extrabold uppercase text-white drop-shadow-md tracking-wider mb-6">
+                  Portfolio
+              </h1>
 
-        <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
+              <div className="flex flex-col items-center gap-4 font-[family-name:var(--font-geist-mono)]">
+                  <p className="text-3xl mb-2 tracking-[-.01em]">Enzo OUDIN</p>
+                  <Link
+                      href="/topics"
+                      className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 md:w-[158px]"
+                  >
+                      Continuer
+                  </Link>
+              </div>
+          </main>
+
+
+          <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
           <p className="flex items-center gap-2 hover:underline hover:underline-offset-4">
             enzoleewood1@gmail.com
           </p>

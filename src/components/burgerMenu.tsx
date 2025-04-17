@@ -42,11 +42,29 @@ export default function BurgerMenu() {
                     </li>
                     <li>
                         <a
-                            href="#projects"
+                            href="/inspiration"
                             onClick={toggleMenu}
                             className="hover:underline font-[family-name:var(--font-geist-mono)] font-semibold"
                         >
-                            Projets
+                            Inspiration
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="/project1"
+                            onClick={toggleMenu}
+                            className="hover:underline font-[family-name:var(--font-geist-mono)] font-semibold"
+                        >
+                            Projet 1
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="/project2"
+                            onClick={toggleMenu}
+                            className="hover:underline font-[family-name:var(--font-geist-mono)] font-semibold"
+                        >
+                            Projet 2
                         </a>
                     </li>
                 </ul>
