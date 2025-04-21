@@ -34,7 +34,7 @@ export default function Inspiration() {
 
                 <div className="flex flex-col sm:flex-row-reverse items-center gap-10">
                     <div className="sm:w-1/2 text-center sm:text-left">
-                        <p className="text-xl sm:text-2xl  tracking-tight leading-relaxed">
+                        <p className="text-xl sm:text-3xl  tracking-tight leading-relaxed">
                             Ou alors le divertissement et l'amusement pour avoir un éventail plus large,
                             comme les jeux-vidéos ou la musique.
                         </p>
