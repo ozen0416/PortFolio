@@ -7,7 +7,8 @@ export default function Project2() {
             <div className="absolute top-0 left-0 p-4">
                 <BurgerMenu />
             </div>
-            <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-center">
+
+            <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-center w-full max-w-6xl">
                 <h1 className="text-5xl">Projet 2</h1>
 
                 <p className="text-2xl text-center mb-2 tracking-[-.01em]">
@@ -15,52 +16,58 @@ export default function Project2() {
                 </p>
 
                 <p className="text-2xl text-center mb-2 tracking-[-.01em]">
-                    L’objectif était simple : s’exercer au machine learning et prédire le prix de maisons en utilisant différentes variables que nous estimions pertinentes.
+                    L’objectif était simple : <span className="text-[#00FFC2] font-semibold">s’exercer au machine learning</span> et <span className="text-[#00FFC2] font-semibold">prédire le prix de maisons</span> en utilisant différentes variables que nous estimions pertinentes.
                 </p>
 
                 <p className="text-2xl text-center mb-2 tracking-[-.01em]">
-                    Après avoir nettoyé les colonnes contenant peu de données, nous avons mis en place une régression linéaire simple sur les données restantes.
+                    Après avoir nettoyé les colonnes contenant peu de données, nous avons mis en place une <span className="text-[#00FFC2] font-semibold">régression linéaire simple</span> sur les données restantes.
                 </p>
 
-                <Image
-                    src="/Project2_1.png"
-                    alt="Régression linéaire des données du dataset après nettoyage"
-                    width={800}
-                    height={600}
-                    quality={100}
-                />
+                <div className="flex flex-col md:flex-row items-center gap-8">
+                    <Image
+                        src="/Project2_1.png"
+                        alt="Régression linéaire des données du dataset après nettoyage"
+                        width={500}
+                        height={400}
+                        quality={100}
+                        className="rounded-2xl shadow-lg object-cover"
+                    />
+                    <div className="text-2xl text-center md:text-left tracking-[-.01em]">
+                        <p>Visualisation de la <span className="text-[#00FFC2] font-semibold">régression linéaire</span> sur les données nettoyées.</p>
+                        <p className="text-base mt-2 text-red-300 font-semibold" >R² = 0.9320 et RMSE = 20697</p>
+                    </div>
+                </div>
 
-                <p className=" text-center font-medium mt-2">
-                    R² = 0.9320 et RMSE = 20697
-                </p>
+                <div className="flex flex-col md:flex-row-reverse items-center gap-8">
+                    <Image
+                        src="/Project2_2.png"
+                        alt="Classement des 20 variables les plus influentes sur le prix"
+                        width={500}
+                        height={400}
+                        quality={100}
+                        className="rounded-2xl shadow-lg object-cover"
+                    />
+                    <p className="text-2xl text-center md:text-right tracking-[-.01em]">
+                        Classement des <span className="text-[#00FFC2] font-semibold">20 variables ayant le plus d’influence sur le prix final</span>  d’une maison.
+                    </p>
+                </div>
 
-                <p className="text-2xl text-center mb-2 tracking-[-.01em] mt-4">
-                    Nous avons ensuite établi un classement des variables ayant le plus d’influence sur le prix.
-                </p>
-
-                <Image
-                    src="/Project2_2.png"
-                    alt="Classement des 20 variables les plus influentes sur le prix"
-                    width={800}
-                    height={600}
-                    quality={100}
-                />
-
-                <p className="text-2xl text-center mb-2 tracking-[-.01em]">
-                    Enfin, nous avons réalisé une régression uniquement à partir des variables liées à l’intérieur de la maison, afin d’observer l’impact d’éléments comme le nombre de salles de bain, la présence d’un garage, etc.
-                </p>
-
-                <Image
-                    src="/Project2_3.png"
-                    alt="Régression linéaire sur les variables uniquement liées à l’intérieur de la maison"
-                    width={800}
-                    height={600}
-                    quality={100}
-                />
-
-                <p className=" text-center font-medium mt-2">
-                    R² = 0.7945 et RMSE = 35992
-                </p>
+                <div className="flex flex-col md:flex-row items-center gap-8">
+                    <Image
+                        src="/Project2_3.png"
+                        alt="Régression linéaire sur les variables uniquement liées à l’intérieur de la maison"
+                        width={500}
+                        height={400}
+                        quality={100}
+                        className="rounded-2xl shadow-lg object-cover"
+                    />
+                    <div className="text-2xl text-center md:text-left tracking-[-.01em]">
+                        <p>
+                            Régression linéaire réalisée uniquement à partir des <span className="text-[#00FFC2] font-semibold">variables liées à l’intérieur de la maison.</span>
+                        </p>
+                        <p className="text-base font-medium mt-2 text-red-300 font-semibold">R² = 0.7945 et RMSE = 35992</p>
+                    </div>
+                </div>
             </main>
 
             <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
