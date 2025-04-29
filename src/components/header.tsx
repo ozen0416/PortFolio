@@ -3,13 +3,13 @@
 import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 
-export default function BurgerMenu() {
+export default function Header() {
     const [isOpen, setIsOpen] = useState(false);
 
     const toggleMenu = () => setIsOpen(!isOpen);
 
     return (
-        <div className="fixed top-4 left-4 z-50">
+        <div className="absolute top-0 left-0 p-4 z-[100]">
             <button
                 onClick={toggleMenu}
                 className="p-2 text-white focus:outline-none"
